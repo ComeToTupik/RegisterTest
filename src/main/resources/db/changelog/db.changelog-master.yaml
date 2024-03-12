@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/changeset/register_V001_init.sql
+  - include:
+      file: db/changelog/changeset/register_V002_insert.sql
