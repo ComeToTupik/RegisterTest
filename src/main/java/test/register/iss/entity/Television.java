@@ -18,7 +18,7 @@ public class Television {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "technic_id")
     private Technic aboutTechnic;
 
