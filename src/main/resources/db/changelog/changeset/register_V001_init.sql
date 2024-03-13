@@ -10,7 +10,10 @@ CREATE TABLE IF NOT EXISTS technic (
     dimensions VARCHAR(128) NOT NULL,
     order_online BOOLEAN DEFAULT FALSE,
     installment_plan BOOLEAN DEFAULT FALSE,
-    availability BOOLEAN DEFAULT TRUE
+    availability BOOLEAN DEFAULT TRUE,
+
+    created_at TIMESTAMPTZ DEFAULT current_timestamp,
+    updated_at TIMESTAMPTZ DEFAULT current_timestamp
 );
 
 CREATE TABLE IF NOT EXISTS television (
